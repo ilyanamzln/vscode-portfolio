@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+h1,
+h2,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/* Typewriter animation */
+.typewriter {
+  overflow: hidden;
+  border-right: 0.175em solid #fff;
+  white-space: nowrap;
+  letter-spacing: 0.125em;
+  animation:
+    typing 3s steps(22),
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+
+.line-container {
+  counter-reset: line;
+}
+
+.line-container p.line::before,
+.line-container div.line::before {
+  color: gray;
+  content: counter(line);
+  counter-increment: line;
+  margin-right: 1rem;
+}
+
+.image-container img {
+  transition: transform 0.3s ease;
+  animation: bounceTwice 1.2s ease-out 1;
+}
+
+.image-container img:hover {
+  cursor: pointer;
+  animation: bounceTwice 1.2s ease-out infinite; /* Fast double-bounce */
+}
+
+@keyframes bounceTwice {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-15px); /* First bounce up */
+  }
+  40% {
+    transform: translateY(0); /* Back down */
+  }
+  60% {
+    transform: translateY(-10px); /* Second smaller bounce up */
+  }
+  80% {
+    transform: translateY(0); /* Back down */
+  }
+}
