@@ -9,8 +9,8 @@ export const projects = [
     image: vscode,
     color: "bg-sky-400",
     tags: ["react", "tailwindcss"],
-    sourceCode: "",
-    demo: "",
+    sourceCode: "https://github.com/ilyanamzln/vscode-portfolio",
+    demo: "https://ilyanamazlan-portfolio.netlify.app/",
   },
   {
     id: 2,
