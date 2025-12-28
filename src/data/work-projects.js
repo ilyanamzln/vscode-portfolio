@@ -117,7 +117,7 @@ export const workProjects = [
   {
     id: 4,
     title: "Zakat Payment Web Platform",
-    description: "(Public-Facing · Production System)",
+    description: "(Public-Facing)",
     company: "Herepay Sdn Bhd",
     overview:
       "A public-facing zakat payment platform enabling users to submit payments and manage related financial records.",
