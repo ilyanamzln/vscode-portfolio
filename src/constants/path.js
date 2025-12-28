@@ -20,8 +20,8 @@ export const FILES_PATH = [
     icon: "/js_icon.svg",
   },
   {
-    name: "projects.js",
-    path: "/projects",
+    name: "personal.js",
+    path: "/personal",
     icon: "/js_icon.svg",
   },
   // {
