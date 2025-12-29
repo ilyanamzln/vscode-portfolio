@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Settings from "./pages/Settings";
 import Work from "./pages/Work";
+import ReadMe from "./pages/ReadMe";
 import ErrorPage from "./pages/ErrorPage";
 import PageNotFound from "./pages/PageNotFound";
 
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       { path: "/personal", element: <Projects /> },
       { path: "/settings", element: <Settings /> },
       { path: "/professional", element: <Work /> },
+      { path: "/readme", element: <ReadMe /> },
       { path: "*", element: <PageNotFound /> },
     ].map((route) => ({ errorElement: <ErrorPage />, ...route })),
   },

@@ -24,6 +24,11 @@ export const FILES_PATH = [
     path: "/personal",
     icon: "/js_icon.svg",
   },
+  {
+    name: "README.md",
+    path: "/readme",
+    icon: "/markdown_icon.svg",
+  },
   // {
   //   name: "github.md",
   //   path: "/github",

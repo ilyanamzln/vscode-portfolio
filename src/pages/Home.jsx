@@ -15,7 +15,10 @@ function Home() {
       </div>
       <div className="z-20 gap-y-10 p-4 md:px-10">
         <MyName />
-        <Button to="/projects" className="bg-accentColor text-white">
+        <Button to="/readme" className="bg-accentColor text-white">
+          Getting Started
+        </Button>
+        <Button to="/professional" className="bg-accentColor text-white">
           View Work
         </Button>
         <Button to="/contact" className="text-textColor">
