@@ -3,6 +3,7 @@ import Files from "./icons/FilesIcon";
 import Mail from "./icons/MailIcon";
 import Account from "./icons/AccountIcon";
 import Settings from "./icons/SettingsIcon";
+import Search from "./icons/SearchIcon";
 import SidebarItem from "./SidebarItem";
 
 const sidebarTopItems = [
@@ -11,8 +12,12 @@ const sidebarTopItems = [
     path: "/",
   },
   {
+    Icon: Search,
+    path: "/readme",
+  },
+  {
     Icon: Code,
-    path: "/projects",
+    path: "/professional",
   },
   {
     Icon: Mail,
